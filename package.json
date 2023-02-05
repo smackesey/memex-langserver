@@ -1,0 +1,47 @@
+{
+  "name": "memexwiki-language-server",
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "author": "Sean Mackesey <s.mackesey@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf lib",
+    "watch": "NODE_ENV=development webpack --watch",
+    "build": "NODE_ENV=production webpack",
+    "serve": "ts-node src/index.ts"
+  },
+  "devDependencies": {
+    "@types/dedent": "^0.7.0",
+    "@types/memoizee": "^0.4.6",
+    "@types/node": "^16.3.3",
+    "@types/redis": "^2.8.31",
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3",
+    "eslint": "^7.30.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.23.4",
+    "node-loader": "^2.0.0",
+    "ts-loader": "^9.2.3",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5",
+    "webpack": "^5.45.1",
+    "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "@types/lokijs": "^1.5.5",
+    "dedent": "^0.7.0",
+    "fast-glob": "^3.2.7",
+    "glob": "^7.1.7",
+    "immutable": "^4.0.0-rc.14",
+    "lokijs": "^1.5.12",
+    "priorityqueue": "^1.0.0",
+    "redis": "^3.1.2",
+    "rxjs": "^7.2.0",
+    "tree-sitter": "^0.19.0",
+    "tree-sitter-memexwiki": "link:../tree-sitter",
+    "vscode-languageserver": "^7.0.0",
+    "vscode-languageserver-protocol": "^3.16.0",
+    "vscode-languageserver-textdocument": "^1.0.1",
+    "vscode-uri": "^3.0.2"
+  }
+}
